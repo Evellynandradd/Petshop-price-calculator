@@ -19,54 +19,69 @@ const Formulario = ({ onSubmit }) => {
 
   return (
     <div style={styles.card}>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ textAlign: 'left' }}>
         <h2 style={styles.title}>Encontre o Melhor Petshop</h2>
-        <label>
+        <label style={styles.label}>
           Data:
-          <input type="date" value={data} onChange={(e) => setData(e.target.value)} />
+          <input type="date" value={data} onChange={(e) => setData(e.target.value)} style={styles.input} />
         </label>
-        <br />
         <div style={styles.space}></div>
-        <label>
+        <label style={styles.label}>
           Quantidade de cães pequenos:
-          <input type="number" value={qtdCaesPequenos} onChange={(e) => setQtdCaesPequenos(e.target.value)} />
+          <input type="number" value={qtdCaesPequenos} onChange={(e) => setQtdCaesPequenos(e.target.value)} style={styles.input} />
         </label>
-        <br />
-        <div style={styles.space}></div> 
-        <label>
+        <div style={styles.space}></div>
+        <label style={styles.label}>
           Quantidade de cães grandes:
-          <input type="number" value={qtdCaesGrandes} onChange={(e) => setQtdCaesGrandes(e.target.value)} />
+          <input type="number" value={qtdCaesGrandes} onChange={(e) => setQtdCaesGrandes(e.target.value)} style={styles.input} />
         </label>
-        <br />
-        <button type="submit" style={styles.button}>Calcular</button>
+        <div style={{ textAlign: 'center' }}>
+          <button type="submit" style={styles.button}>Calcular</button>
+        </div>
       </form>
     </div>
   );
-};
-
-const styles = {
-  card: {
-    border: '1px solid #ccc',
-    borderRadius: '10px',
-    padding: '20px',
-    width: '300px',
-    height: '390px', 
-    margin: '70px auto',
-    textAlign: 'center',
-    backgroundColor: '#f0f0f0',
-  },
-  title: {
-    fontSize: '1.5em',
-    marginBottom: '10px',
-  },
-  space: {
-    marginBottom: '20px',
-  },
-  button: {
-    marginTop: '10px',
-  },
-};
-
-
+  
+  
+  
+  };
+  
+  const styles = {
+    card: {
+      border: '1px solid #ccc',
+      borderRadius: '10px',
+      padding: '20px',
+      width: '300px',
+      height: '300px',
+      margin: '40px auto',
+      backgroundColor: '#f0f0f0',
+    },
+    title: {
+      fontSize: '1.5em',
+      marginBottom: '10px',
+    },
+    label: {
+      display: 'block',
+      marginBottom: '10px',
+    },
+    input: {
+      width: '95%',
+      padding: '8px',
+      borderRadius: '5px',
+      border: '1px solid #ccc',
+    },
+    space: {
+      marginBottom: '2px',
+    },
+    button: {
+      width: '50%',
+      padding: '10px',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '1em',
+      marginTop: '10px',
+    },
+  };
+  
 
 export default Formulario;

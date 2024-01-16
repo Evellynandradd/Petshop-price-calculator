@@ -6,13 +6,16 @@ const Resultado = ({ melhorPetshop }) => {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      height: '100vh', 
-      marginTop: '-430px', 
+      height: '100vh',
+      marginTop: '-240px',
     },
     card: {
       border: '1px solid #ccc',
       borderRadius: '8px',
-      padding: '12px',
+      padding: '20px',
+      backgroundColor: '#f0f0f0',
+      width: '300px',
+      textAlign: 'center',
     },
   };
 
@@ -22,13 +25,15 @@ const Resultado = ({ melhorPetshop }) => {
         <h2>Melhor Petshop</h2>
         {melhorPetshop.nome && (
           <>
-            <p>Nome: {melhorPetshop.nome}</p>
-            <p>Preço Total: R$ {melhorPetshop.precoTotal.toFixed(2)}</p>
+            <p style={{ margin: '8px 0' }}>Nome: {melhorPetshop.nome}</p>
+            <p style={{ margin: '8px 0' }}>Preço Total: R$ {melhorPetshop.precoTotal.toFixed(2)}</p>
           </>
         )}
       </div>
     </div>
   );
 };
+
+
 
 export default Resultado;
