@@ -21,3 +21,50 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Arquivos de compilação e build
+build/
+dist/
+
+# Arquivos de dependências
+node_modules/
+
+# Arquivos de cache
+.cache/
+*.log
+
+# Arquivos de configuração do ambiente
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos gerados durante o desenvolvimento
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
+
+# Arquivos de configuração específicos da IDE
+.idea/
+.vscode/
+
+# Arquivos de teste e cobertura
+coverage/
+*.cover*
+
+# Arquivos de log
+*.log
+log.txt
+
+# Arquivos de pacotes
+*.zip
+*.tar.gz
+
+# Arquivos de configuração do sistema
+.DS_Store
+desktop.ini
+ehthumbs.db
+Thumbs.db
