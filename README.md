@@ -17,17 +17,26 @@
 
 ## Decisões de Projeto
 
-1. **React:**
-   - Utilizei React para a construção do front-end como instruido.
+### React
 
-2. **Estado Local:**
-   - Gerenciei o estado local do React (`useState`) para controlar os dados do formulário e os resultados do cálculo.
+Utilizei a biblioteca React para a construção do front-end, seguindo as instruções do teste. O React é escolhido por sua eficiência na criação de interfaces de usuário interativas.
 
-3. **Axios:**
-   - Utilizei a biblioteca axios para fazer chamadas à API do servidor back-end pela sua simplicidade e suporte a Promises.
+### Estado Local
 
-4. **Formulário:**
-   - Organizei os campos de entrada em um formulário para facilitar a submissão e evitar recargas da página.
+Gerenciei o estado local do React utilizando o hook `useState`. Isso permitiu o controle eficiente dos dados do formulário e dos resultados do cálculo diretamente no componente.
+
+### Requisições HTTP com Axios
+
+Para realizar chamadas à API do servidor back-end, optei por utilizar a biblioteca Axios devido à sua simplicidade e suporte a Promises. Isso facilita a comunicação entre o front-end e o back-end, garantindo uma integração suave.
+
+### Formulário
+
+Organizei os campos de entrada em um formulário para facilitar o envio dos dados ao servidor e evitar recargas da página. O uso de formulários em conjunto com JavaScript facilita a manipulação dinâmica dos dados.
+
+### Linguagem JavaScript
+
+Todo o código foi implementado em JavaScript, aproveitando o ambiente oferecido pelo React.
+
 
 ## O que mais é importante compartilhar sobre o projeto
 
